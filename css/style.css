@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #skills h3 {
+  font-family: 'Abel', sans-serif; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#skills {
+  background-color: #bea300; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #skills h2 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #skills .skill-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 10px;
+    padding: 0px;
+    background-color: #fdfcf6;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    #skills .skill-box p {
+      padding: 0 10px 10px 10px; }
+  #skills h3 {
+    color: #fdfcf6;
+    background-color: #14c0c9;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+
+@media (min-width: 768px) {
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #skills .skill-box {
+    margin: 0 10px; } }
+header {
+  height: 250px;
+  background-image: url("../images/img_responsive_photo2.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+@media (min-width: 768px) {
+  header {
+    height: 500px; } }
+#contact {
+  text-align: center; }
+  #contact h2 {
+    font-size: 3.0rem; }
+  #contact a {
+    color: #fdfcf6;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    background-color: #14c0c9;
+    font-size: 2.8rem;
+    -moz-border-radius: 4%;
+    -webkit-border-radius: 4%;
+    border-radius: 4%; }
+
+/*# sourceMappingURL=style.css.map */
